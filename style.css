@@ -1,0 +1,1217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #252525;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+:root {
+    --green: #8dc63f;
+    --dark-green: #65a52c;
+    --blue: #1769aa;
+    --dark: #202b38;
+    --light: #f6f8fa;
+}
+
+/* TOP BAR */
+
+.topbar {
+    min-height: 42px;
+    padding: 8px 6%;
+    background: #f5f6f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 12px;
+    color: #555;
+}
+
+.top-left,
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-logo {
+    width: 135px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.top-right a {
+    font-weight: 500;
+}
+
+.sponsor,
+.top-donate {
+    padding: 7px 17px;
+    border-radius: 4px;
+    color: white;
+    background: var(--blue);
+    border-radius: 30px;
+}
+
+.top-donate {
+    background: var(--green);
+}
+
+/* NAVBAR */
+
+header {
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 85px;
+    max-width: 1440px;
+    margin: auto;
+    padding: 12px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 37px auto;
+    align-items: center;
+    color: #1769aa;
+    line-height: 1;
+    min-width: 150px;
+}
+
+.logo-icon {
+    grid-row: span 2;
+    font-size: 34px;
+    color: var(--green);
+}
+
+.logo-name {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo small {
+    font-size: 8px;
+    color: #555;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.nav-links a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: var(--green);
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.bank-btn,
+.nav-donate {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 11px 16px;
+    border-radius: 5px;
+    color: white;
+    background: var(--blue);
+}
+
+.nav-donate {
+    background: var(--green);
+}
+
+/* HERO SECTION */
+
+.hero {
+    max-width: 1440px;
+    margin: auto;
+    padding: 55px 6% 45px;
+    min-height: 540px;
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 35px;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 620px;
+}
+
+.hero-label {
+    display: inline-block;
+    background: #eff8e6;
+    color: #619d29;
+    padding: 9px 17px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 4.2vw, 57px);
+    font-weight: 700;
+    line-height: 1.22;
+    color: #252d38;
+}
+
+.hero h1 span {
+    color: var(--green);
+    display: block;
+}
+
+.hero-content > p {
+    color: #6c737c;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-top: 18px;
+    max-width: 570px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 13px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 13px 23px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: var(--green);
+    color: white;
+}
+
+.secondary-btn {
+    border: 1px solid #dddddd;
+    color: #333;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    transform: translateY(-3px);
+}
+
+.hero-stat {
+    border-left: 4px solid var(--green);
+    padding-left: 17px;
+    margin-top: 35px;
+}
+
+.hero-stat h2 {
+    font-size: 29px;
+    color: var(--green);
+}
+
+.hero-stat h4 {
+    font-size: 14px;
+}
+
+.hero-stat p {
+    font-size: 11px;
+    color: #888;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* COMMON SECTION */
+
+.section {
+    padding: 75px 6%;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 38px;
+}
+
+.section-heading > span,
+.impact-heading > span {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--green);
+    letter-spacing: 2px;
+}
+
+.section-heading h2,
+.impact-heading h2 {
+    font-size: 34px;
+    color: #202b38;
+    margin: 8px 0 12px;
+}
+
+.section-heading p,
+.impact-heading p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #777;
+}
+
+/* LIVE APPEALS */
+
+.appeals {
+    background: #f8faf7;
+}
+
+.appeal-grid {
+    max-width: 1350px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.appeal-card {
+    background: white;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.appeal-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px #00000012;
+}
+
+.appeal-card img {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+}
+
+.appeal-content {
+    padding: 17px;
+}
+
+.appeal-content h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #252525;
+}
+
+.appeal-content p {
+    font-size: 11px;
+    line-height: 1.8;
+    color: #777;
+    min-height: 100px;
+}
+
+.appeal-content a {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* QUICK DONATE */
+
+.quick-donate {
+    margin: 65px 6%;
+    padding: 35px;
+    border-radius: 9px;
+    background: #f2f8e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.quick-title h2 {
+    font-size: 27px;
+    color: #263343;
+}
+
+.quick-title p {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.donate-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.donate-options a {
+    background: white;
+    padding: 12px 19px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.donate-options a:hover {
+    background: var(--green);
+    color: white;
+}
+
+/* CAMPAIGNS */
+
+.campaign-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1350px;
+    margin: auto;
+}
+
+.campaign-card {
+    border: 1px solid #eee;
+    border-radius: 9px;
+    overflow: hidden;
+    background: white;
+    transition: 0.3s;
+}
+
+.campaign-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px #00000012;
+}
+
+.campaign-card > img {
+    height: 210px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.campaign-info {
+    padding: 20px;
+}
+
+.campaign-info span {
+    display: inline-block;
+    font-size: 10px;
+    color: var(--green);
+    background: #f0f8e8;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.campaign-info h3 {
+    font-size: 16px;
+    margin: 12px 0 8px;
+}
+
+.campaign-info p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #777;
+    min-height: 60px;
+}
+
+.campaign-info a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: var(--green);
+    color: white;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* IMPACT */
+
+.impact {
+    background: linear-gradient(120deg, #155f9c, #0b477d);
+    padding: 70px 6%;
+    color: white;
+}
+
+.impact-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.impact-heading > span {
+    color: #a9dc69;
+}
+
+.impact-heading h2 {
+    color: white;
+}
+
+.impact-heading p {
+    color: #dce8f2;
+}
+
+.impact-grid {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.impact-item {
+    padding: 25px 12px;
+    border-right: 1px solid #ffffff30;
+}
+
+.impact-item h2 {
+    color: #a9dc69;
+    font-size: 33px;
+}
+
+.impact-item p {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #e2eaf1;
+}
+
+.impact-bottom {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.impact-bottom h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.impact-bottom a {
+    display: inline-block;
+    padding: 12px 23px;
+    background: var(--green);
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* INITIATIVES */
+
+.initiative-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.initiative-filters a {
+    padding: 9px 22px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.initiative-filters .selected {
+    background: var(--green);
+    color: white;
+    border-color: var(--green);
+}
+
+.initiative-grid {
+    max-width: 1350px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.initiative-card {
+    background: white;
+    border: 1px solid #eee;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.initiative-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px #00000012;
+}
+
+.initiative-card img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.initiative-card h3 {
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.initiative-card p {
+    color: #888;
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+.initiative-card strong {
+    display: block;
+    font-size: 23px;
+    color: var(--green);
+    margin-top: 5px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+    background: #f7f9fb;
+}
+
+.testimonial-grid {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.testimonial-card {
+    background: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 9px;
+    border: 1px solid #eee;
+}
+
+.testimonial-avatar {
+    height: 65px;
+    width: 65px;
+    margin: 0 auto 15px;
+    background: #eaf4dc;
+    color: #6da532;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.testimonial-card h3 {
+    font-size: 16px;
+}
+
+.testimonial-card > p {
+    font-size: 11px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.stars {
+    color: #f4b400;
+    margin: 12px 0;
+    letter-spacing: 3px;
+}
+
+.testimonial-card .review {
+    font-size: 12px;
+    line-height: 1.9;
+    color: #666;
+}
+
+/* BLOGS */
+
+.blog-grid {
+    max-width: 1350px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.blog-card {
+    border: 1px solid #eee;
+    border-radius: 9px;
+    overflow: hidden;
+    background: white;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.blog-info {
+    padding: 20px;
+}
+
+.blog-info span {
+    color: var(--green);
+    font-size: 11px;
+}
+
+.blog-info h3 {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 12px 0;
+}
+
+.blog-info a,
+.media-card a,
+.news-card a {
+    font-size: 12px;
+    color: var(--green);
+    font-weight: 700;
+}
+
+.center-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.center-button a {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--green);
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* MEDIA */
+
+.media-section {
+    background: #f7f9fb;
+}
+
+.media-grid {
+    max-width: 1350px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.media-card {
+    background: white;
+    padding-bottom: 20px;
+    border-radius: 9px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.media-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.media-card h3 {
+    font-size: 14px;
+    padding: 18px 18px 10px;
+    min-height: 75px;
+}
+
+.media-card a {
+    display: inline-block;
+    padding: 0 18px;
+}
+
+/* NEWS */
+
+.news-grid {
+    max-width: 1350px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.news-card {
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    box-shadow: 0 8px 20px #00000010;
+}
+
+.news-card span {
+    font-size: 11px;
+    color: var(--green);
+}
+
+.news-card h3 {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 15px 0;
+    min-height: 100px;
+}
+
+/* DONATION BOXES */
+
+.donation-boxes {
+    background: #f7f9fb;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.donation-box {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.donation-box h3 {
+    font-size: 19px;
+}
+
+.donation-box p {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.8;
+    margin: 12px 0;
+}
+
+.donation-box label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.donation-box input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    font-family: inherit;
+}
+
+.donation-box a {
+    display: inline-block;
+    background: var(--green);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+    background: #1769aa;
+    padding: 65px 6%;
+    text-align: center;
+    color: white;
+}
+
+.newsletter h2 {
+    font-size: 30px;
+}
+
+.newsletter p {
+    font-size: 12px;
+    margin: 12px auto 25px;
+    max-width: 600px;
+    line-height: 1.8;
+    color: #e2edf6;
+}
+
+.newsletter form {
+    max-width: 550px;
+    display: flex;
+    margin: auto;
+    gap: 10px;
+}
+
+.newsletter input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-family: inherit;
+}
+
+.newsletter button {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 4px;
+    background: var(--green);
+    color: white;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    background: #172b40;
+    color: white;
+    padding: 65px 6% 0;
+}
+
+.footer-grid {
+    max-width: 1350px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1.2fr 1.4fr;
+    gap: 35px;
+    padding-bottom: 45px;
+}
+
+.footer-logo {
+    color: var(--green);
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.footer-about p {
+    font-size: 12px;
+    line-height: 1.9;
+    color: #c2ccd5;
+    margin-top: 17px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    height: 32px;
+    width: 32px;
+    background: var(--green);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--green);
+}
+
+.footer-links a {
+    display: block;
+    color: #c2ccd5;
+    font-size: 12px;
+    margin-bottom: 13px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--green);
+}
+
+.footer-contact p {
+    color: #c2ccd5;
+    font-size: 11px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ffffff25;
+    max-width: 1350px;
+    margin: auto;
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+    font-size: 11px;
+    color: #c2ccd5;
+}
+
+.footer-bottom div {
+    display: flex;
+    gap: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .appeal-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .campaign-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .topbar {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .top-left {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .top-right {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .navbar {
+        justify-content: center;
+        padding: 15px 5%;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-buttons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 40px 6%;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-stat {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .hero-image img {
+        height: 350px;
+    }
+
+    .appeal-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .initiative-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-grid,
+    .media-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .donation-boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-donate {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .donate-options {
+        justify-content: center;
+    }
+
+    .quick-title {
+        width: 100%;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .topbar {
+        font-size: 10px;
+    }
+
+    .top-left {
+        gap: 8px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-image img {
+        height: 280px;
+    }
+
+    .appeal-grid,
+    .campaign-grid,
+    .initiative-grid,
+    .blog-grid,
+    .media-grid,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .appeal-card img {
+        height: 210px;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .impact-item h2 {
+        font-size: 25px;
+    }
+
+    .impact-item {
+        border-right: none;
+        border-bottom: 1px solid #ffffff30;
+    }
+
+    .section {
+        padding: 50px 5%;
+    }
+
+    .quick-donate {
+        margin: 35px 5%;
+        padding: 25px 15px;
+    }
+
+    .donate-options a {
+        padding: 10px 13px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-bottom div {
+        justify-content: center;
+    }
+}
